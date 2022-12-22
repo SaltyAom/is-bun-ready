@@ -22,7 +22,7 @@ export default function Index() {
                 </h2>
                 <h6 className="text-center text-gray-500 mt-4">
                     Not find what you&apos;re looking for?{' '}
-                    <Button href="https://github.com/saltyaom/is-bun-ready-yet">
+                    <Button href="https://github.com/saltyaom/is-bun-ready">
                         Add one
                     </Button>
                 </h6>
