@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }: AppProps) {
     return (
         <>
             <OpenGraph
-                canonical="https://isbunreadyte.netlify.app"
+                canonical="https://is-bun-ready.pages.dev"
                 title="Is Bun Ready Yet"
                 description="Community guide for tracking Bun supports library /
                     framework"
