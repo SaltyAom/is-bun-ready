@@ -10,8 +10,8 @@ const pwaConfig = require('./tools/withPwa')
 
 module.exports = withPlugins(
     [
-        // [withPwa, pwaConfig]
-        [withAnalyze]
+        [withPwa, pwaConfig]
+        // [withAnalyze]
     ],
     {
         swcMinify: true,
@@ -47,10 +47,6 @@ module.exports = withPlugins(
             }
 
             return config
-        },
-        i18n: {
-            locales: ['en-US'],
-            defaultLocale: 'en-US',
         }
     }
 )

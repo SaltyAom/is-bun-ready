@@ -5,7 +5,7 @@
 	"license": "MIT",
 	"scripts": {
 		"dev": "next",
-		"build": "NODE_ENV=production next build",
+		"build": "NODE_ENV=production next build && next export",
 		"start": "NODE_ENV=production next start",
 		"analyze": "ANALYZE=true next build",
 		"export": "next export",
