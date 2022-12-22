@@ -90,7 +90,7 @@ function Row({
                 <TableRow>
                     <TableCell
                         style={{ paddingBottom: 0, paddingTop: 0 }}
-                        colSpan={6}
+                        colSpan={7}
                     >
                         <Collapse in={open} unmountOnExit>
                             <Box sx={{ margin: 3 }}>
