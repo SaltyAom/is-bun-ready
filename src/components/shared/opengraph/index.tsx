@@ -40,7 +40,7 @@ const OpenGraph: OpenGraphComponent = ({
             <meta property="og:description" content={description} />
             <meta property="article:author" content={author} />
             <meta property="og:site_name" content={name} />
-            <meta property="og:image" content={`${canonical}/${image.src}`} />
+            <meta property="og:image" content={`${canonical}${image.src}`} />
             <meta property="og:image:width" content={image.width.toString()} />
             <meta
                 property="og:image:height"
