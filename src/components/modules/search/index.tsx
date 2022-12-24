@@ -1,6 +1,6 @@
 import { data } from '@stores'
 
-import { Autocomplete, TextField } from '@mui/material'
+import { Autocomplete, Chip, TextField } from '@mui/material'
 
 import styles from './search.module.sass'
 
@@ -8,16 +8,26 @@ export default function SearchInput({
     value,
     set
 }: {
-    value: string
+    value: string[]
     // eslint-disable-next-line no-unused-vars
-    set: (newValue: string) => void
+    set: (newValue: string[]) => void
 }) {
     return (
         <div className={styles['search-outer']}>
             <Autocomplete
                 id="search"
                 value={value}
-                onChange={(event, newValue) => set(newValue ?? '')}
+                multiple
+                onChange={(event, newValue) => set(newValue)}
+                renderTags={(_, getTagProps) =>
+                    value.map((option: string, index: number) => (
+                        <Chip
+                            variant="outlined"
+                            label={option}
+                            {...getTagProps({ index })}
+                        />
+                    ))
+                }
                 options={data.map(({ name }) => name)}
                 renderInput={(params) => (
                     <TextField

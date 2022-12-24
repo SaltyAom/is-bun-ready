@@ -12,7 +12,7 @@ The data must follow the [type definition of Item](https://github.com/saltyaom/i
     - Name of the library / framework
 - type: 
     - Should be one of the following:
-        - 'web server'
+        - 'server'
         - 'frontend'
         - 'database'
         - 'utility'

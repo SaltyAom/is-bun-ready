@@ -130,7 +130,7 @@ const handleSort = ({
 }
 
 export default function CollapsibleTable() {
-    const [search, setSearch] = useState('')
+    const [search, setSearch] = useState<string[]>([])
     const [orderBy, setOrderBy] = useState<SortBy>('index.asc')
 
     const [page, setPage] = useState(0)
@@ -179,7 +179,7 @@ export default function CollapsibleTable() {
                                     setOrderBy
                                 })}
                             >
-                                Library
+                                Supports
                             </TableSortLabel>
                         </TableCell>
                         <TableCell align="left">Type</TableCell>
@@ -200,7 +200,11 @@ export default function CollapsibleTable() {
                 </TableHead>
                 <TableBody>
                     {rows
-                        .filter(({ name }) => name.includes(search))
+                        .filter(
+                            ({ name }) =>
+                                !search.length ||
+                                search.find((request) => request.includes(name))
+                        )
                         .sort((a, b) => {
                             let [key, order] = orderBy.split('.') as [
                                 Sort,

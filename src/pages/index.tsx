@@ -5,7 +5,7 @@ import { CollapsibleTable } from '@components'
 export default function Index() {
     return (
         <>
-            <header className="flex flex-col gap-4 w-full max-w-4xl mx-auto pt-24">
+            <header className="flex flex-col gap-4 w-full max-w-4xl mx-auto pt-24 px-4">
                 <figure className="w-24 h-24 mx-auto">
                     <img
                         className="object-contain object-center"
@@ -29,7 +29,7 @@ export default function Index() {
             </header>
             <main className="flex flex-col gap-3 w-full max-w-4xl mx-auto my-12">
                 <CollapsibleTable />
-                <p className="my-4 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed my-4 px-4">
                     ✅ Fully compatible
                     <br />
                     ⚠️ Partial support, not all feature might work

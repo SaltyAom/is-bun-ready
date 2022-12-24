@@ -9,7 +9,7 @@ export const symbol: Record<Item['supports'], string> = {
 export const data: Item[] = [
     {
         name: 'Express',
-        type: 'web server',
+        type: 'server',
         supports: 'partial',
         lastUpdate: '22 Dec 2022',
         bunVersion: '0.2.1',
@@ -18,7 +18,7 @@ export const data: Item[] = [
     },
     {
         name: 'Fastify',
-        type: 'web server',
+        type: 'server',
         supports: 'none',
         lastUpdate: '22 Dec 2022',
         bunVersion: '-',
@@ -26,7 +26,7 @@ export const data: Item[] = [
     },
     {
         name: 'Nestjs',
-        type: 'web server',
+        type: 'server',
         supports: 'none',
         lastUpdate: '22 Dec 2022',
         bunVersion: '-',
@@ -35,7 +35,7 @@ export const data: Item[] = [
     },
     {
         name: 'Hono',
-        type: 'web server',
+        type: 'server',
         supports: 'full',
         lastUpdate: '22 Dec 2022',
         bunVersion: '0.1.10',
@@ -44,7 +44,7 @@ export const data: Item[] = [
     },
     {
         name: 'Elysia',
-        type: 'web server',
+        type: 'server',
         supports: 'full',
         lastUpdate: '22 Dec 2022',
         bunVersion: '0.1.10',
@@ -81,7 +81,7 @@ export const data: Item[] = [
         supports: 'partial',
         lastUpdate: '22 Dec 2022',
         bunVersion: '0.2.1',
-        link: 'https://github.com/sveltejs/svelte',
+        link: 'https://github.com/remix-run',
         detail: 'Work thanks to community driver, [Remix Bun](https://github.com/patlux/remix-bun)'
     },
     {
