@@ -16,6 +16,7 @@ The data must follow the [type definition of Item](https://github.com/saltyaom/i
         - 'frontend'
         - 'database'
         - 'utility'
+        - 'others'
 - supports:
     - Should be one of the following
         - 'full' - is fully supports Bun and should work without problems

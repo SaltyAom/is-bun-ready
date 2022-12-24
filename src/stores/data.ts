@@ -13,7 +13,9 @@ export const data: Item[] = [
         supports: 'partial',
         lastUpdate: '22 Dec 2022',
         bunVersion: '0.2.1',
-        detail: `Work but not fully optimized yet, see [Bun HTTP Benchmark](https://github.com/SaltyAom/bun-http-framework-benchmark) for web framework benchmark.`,
+        detail: `Body parser, and querystring doesn't work yet, slower compared to native Bun framework, see [Bun HTTP Benchmark](https://github.com/SaltyAom/bun-http-framework-benchmark).\n\n
+It's recommended to use native Bun framework like [Elysia](https://github.com/elysiajs/elysia) or [Hono](https://github.com/honojs/hono) for now instead.
+`,
         link: 'https://github.com/expressjs/express'
     },
     {
@@ -32,6 +34,17 @@ export const data: Item[] = [
         bunVersion: '-',
         link: 'https://github.com/nestjs/nest',
         detail: `You can track Nestjs supports at [Bun#1641](https://github.com/oven-sh/bun/issues/1641)`
+    },
+    {
+        name: 'Koa',
+        type: 'server',
+        supports: 'partial',
+        lastUpdate: '24 Dec 2022',
+        bunVersion: '0.4.0',
+        detail: `Body parser, and querystring doesn't work yet, slower compared to native Bun framework, see [Bun HTTP Benchmark](https://github.com/SaltyAom/bun-http-framework-benchmark).\n\n
+It's recommended to use native Bun framework like [Elysia](https://github.com/elysiajs/elysia) or [Hono](https://github.com/honojs/hono) for now instead.
+`,
+        link: 'https://github.com/expressjs/express'
     },
     {
         name: 'Hono',
@@ -109,7 +122,7 @@ export const data: Item[] = [
         link: 'https://github.com/Automattic/mongoose'
     },
     {
-        name: 'Mongodb',
+        name: 'MongoDB',
         type: 'database',
         supports: 'none',
         lastUpdate: '22 Dec 2022',
@@ -131,6 +144,39 @@ export const data: Item[] = [
         lastUpdate: '22 Dec 2022',
         bunVersion: '-',
         link: 'https://github.com/supabase/supabase-js'
+    },
+    {
+        name: 'Cassandra',
+        type: 'database',
+        supports: 'none',
+        lastUpdate: '24 Dec 2022',
+        bunVersion: '-',
+        link: 'https://github.com/datastax/nodejs-driver'
+    },
+    {
+        name: 'ScyllaDB',
+        type: 'database',
+        supports: 'none',
+        lastUpdate: '24 Dec 2022',
+        bunVersion: '-',
+        link: 'https://github.com/datastax/nodejs-driver',
+        detail: 'ScyllaDB use same driver as [Cassandra](https://github.com/datastax/nodejs-driver)'
+    },
+    {
+        name: 'GraphQL Yoga',
+        type: 'utility',
+        supports: 'full',
+        lastUpdate: '24 Dec 2022',
+        bunVersion: '0.2.1',
+        link: 'https://github.com/dotansimha/graphql-yoga'
+    },
+    {
+        name: 'GraphQL Mesh',
+        type: 'utility',
+        supports: 'full',
+        lastUpdate: '24 Dec 2022',
+        bunVersion: '0.2.1',
+        link: 'https://github.com/urigo/graphql-mesh'
     },
     {
         name: 'Jose',
@@ -163,5 +209,30 @@ export const data: Item[] = [
         lastUpdate: '22 Dec 2022',
         bunVersion: '0.1.11',
         link: 'https://github.com/facebookresearch/shumai'
+    },
+    {
+        name: 'Windows',
+        type: 'others',
+        supports: 'none',
+        lastUpdate: '24 Dec 2022',
+        bunVersion: '-',
+        link: 'https://www.microsoft.com/en-us/windows',
+        detail: `You can track Windows supports at [Bun#43](https://github.com/oven-sh/bun/issues/43)`
+    },
+    {
+        name: 'MacOS',
+        type: 'others',
+        supports: 'full',
+        lastUpdate: '24 Dec 2022',
+        bunVersion: '0.1.0',
+        link: 'https://www.apple.com/macos'
+    },
+    {
+        name: 'Linux',
+        type: 'others',
+        supports: 'full',
+        lastUpdate: '24 Dec 2022',
+        bunVersion: '0.1.0',
+        link: 'https://en.wikipedia.org/wiki/Linux'
     }
 ]
