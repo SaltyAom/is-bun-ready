@@ -59,7 +59,7 @@ export const data: Item[] = [
         link: 'https://github.com/facebook/react'
     },
     {
-        name: 'Next.js',
+        name: 'Nextjs',
         type: 'frontend',
         supports: 'partial',
         lastUpdate: '22 Dec 2022',
@@ -93,7 +93,7 @@ export const data: Item[] = [
         link: 'https://github.com/prisma/prisma'
     },
     {
-        name: 'node-postgres (pg)',
+        name: 'Postgres (pg)',
         type: 'database',
         supports: 'none',
         lastUpdate: '22 Dec 2022',
@@ -101,7 +101,7 @@ export const data: Item[] = [
         link: 'https://github.com/brianc/node-postgres'
     },
     {
-        name: 'mongoose',
+        name: 'Mongoose',
         type: 'database',
         supports: 'none',
         lastUpdate: '22 Dec 2022',
@@ -109,7 +109,7 @@ export const data: Item[] = [
         link: 'https://github.com/Automattic/mongoose'
     },
     {
-        name: 'mongodb',
+        name: 'Mongodb',
         type: 'database',
         supports: 'none',
         lastUpdate: '22 Dec 2022',

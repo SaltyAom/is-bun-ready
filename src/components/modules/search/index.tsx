@@ -22,7 +22,8 @@ export default function SearchInput({
                 renderTags={(_, getTagProps) =>
                     value.map((option: string, index: number) => (
                         <Chip
-                            variant="outlined"
+                            variant="filled"
+                            size="small"
                             label={option}
                             {...getTagProps({ index })}
                         />
