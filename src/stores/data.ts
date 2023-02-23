@@ -91,11 +91,11 @@ It's recommended to use native Bun framework like [Elysia](https://github.com/el
     {
         name: 'Remix',
         type: 'frontend',
-        supports: 'partial',
-        lastUpdate: '22 Dec 2022',
+        supports: 'none',
+        lastUpdate: '23 Feb 2023',
         bunVersion: '0.2.1',
         link: 'https://github.com/remix-run',
-        detail: 'Work thanks to community driver, [Remix Bun](https://github.com/patlux/remix-bun)'
+        detail: 'Blocking on `AbortableFetch` (https://github.com/elysiajs/elysia/issues/12)'
     },
     {
         name: 'Prisma',
@@ -106,42 +106,59 @@ It's recommended to use native Bun framework like [Elysia](https://github.com/el
         link: 'https://github.com/prisma/prisma'
     },
     {
-        name: 'Postgres (pg)',
+        name: 'pg',
         type: 'database',
-        supports: 'none',
-        lastUpdate: '22 Dec 2022',
-        bunVersion: '-',
+        supports: 'full',
+        lastUpdate: '23 Feb 2023',
+        bunVersion: '0.5.2',
+        link: 'https://github.com/brianc/node-postgres'
+    },
+    {
+        name: 'postgres',
+        type: 'database',
+        supports: 'full',
+        lastUpdate: '19 Jan 2023',
+        bunVersion: '0.5.0',
+        link: 'https://github.com/porsager/postgres'
+    },
+    {
+        name: 'MySQL (mysql2)',
+        type: 'database',
+        supports: 'full',
+        lastUpdate: '19 Jan 2023',
+        bunVersion: '0.5.0',
         link: 'https://github.com/brianc/node-postgres'
     },
     {
         name: 'Mongoose',
         type: 'database',
-        supports: 'none',
-        lastUpdate: '22 Dec 2022',
-        bunVersion: '-',
+        supports: 'full',
+        lastUpdate: '23 Feb 2023',
+        bunVersion: '0.5.2',
         link: 'https://github.com/Automattic/mongoose'
     },
     {
         name: 'MongoDB',
         type: 'database',
-        supports: 'none',
-        lastUpdate: '22 Dec 2022',
-        bunVersion: '-',
+        supports: 'full',
+        lastUpdate: '23 Feb 2023',
+        bunVersion: '0.5.2',
         link: 'https://github.com/mongodb/node-mongodb-native'
     },
     {
         name: 'Firebase',
         type: 'database',
         supports: 'none',
-        lastUpdate: '22 Dec 2022',
+        lastUpdate: '23 Feb 2023',
         bunVersion: '-',
-        link: 'https://github.com/firebase/firebase-js-sdk'
+        link: 'https://github.com/firebase/firebase-js-sdk',
+        detail: 'Missing `http2` package'
     },
     {
         name: 'Supabase',
         type: 'database',
-        supports: 'none',
-        lastUpdate: '22 Dec 2022',
+        supports: 'partial',
+        lastUpdate: '23 Feb 2023',
         bunVersion: '-',
         link: 'https://github.com/supabase/supabase-js'
     },
@@ -151,7 +168,8 @@ It's recommended to use native Bun framework like [Elysia](https://github.com/el
         supports: 'none',
         lastUpdate: '24 Dec 2022',
         bunVersion: '-',
-        link: 'https://github.com/datastax/nodejs-driver'
+        link: 'https://github.com/datastax/nodejs-driver',
+        detail: 'Blocking on `vm`'
     },
     {
         name: 'ScyllaDB',
