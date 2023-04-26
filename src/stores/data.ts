@@ -29,11 +29,11 @@ It's recommended to use native Bun framework like [Elysia](https://github.com/el
     {
         name: 'Nestjs',
         type: 'server',
-        supports: 'none',
-        lastUpdate: '22 Dec 2022',
-        bunVersion: '-',
+        supports: 'partial',
+        lastUpdate: '26 Apr 2023',
+        bunVersion: '0.5.9',
         link: 'https://github.com/nestjs/nest',
-        detail: `You can track Nestjs supports at [Bun#1641](https://github.com/oven-sh/bun/issues/1641)`
+        detail: `Running built code with \`bun dist/main.js\` works for now while not using complex code.\n\nYou can track Nestjs supports at [Bun#1641](https://github.com/oven-sh/bun/issues/1641)`
     },
     {
         name: 'Koa',
